@@ -2,13 +2,10 @@
 using System.Collections;
 using System.Collections.Generic;
 
-public class Subject {
+public class ObserversDispatcher {
 
     List<Observer> observers = new List<Observer>();
 
-    /// <summary>
-    /// phát sự kiện cho cả đống observer có trong list
-    /// </summary>
     public void Notify()
     {
         for (int i = 0; i < observers.Count; i++)
